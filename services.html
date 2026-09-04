@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMGJ Groupe — Nos services et tarifs</title>
+  <meta name="description" content="Découvrez les offres BMGJ Groupe : création de sites web, identité visuelle, marketing digital et maintenance. Tarifs clairs en FCFA, délais tenus." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/tailwind.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-white text-[#3D4552]">
+
+  <!-- ── HEADER ── -->
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="index.html" aria-label="BMGJ Groupe — accueil">
+        <div class="flex items-center gap-2">
+          <img src="assets/images/bmgj-logo.png" alt="BMGJ Groupe" class="h-10 w-auto" />
+          <span class="font-poppins font-semibold text-base tracking-wide hidden sm:block text-[#1B2A4A]">Groupe</span>
+        </div>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="index.html" data-nav-link class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6] transition-colors duration-200">Accueil</a>
+        <a href="services.html" data-nav-link class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6] transition-colors duration-200">Services</a>
+        <a href="realisations.html" data-nav-link class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6] transition-colors duration-200">Réalisations</a>
+        <a href="equipe.html" data-nav-link class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6] transition-colors duration-200">Équipe</a>
+        <a href="a-propos.html" data-nav-link class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6] transition-colors duration-200">À propos</a>
+        <a href="contact.html" data-nav-link class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6] transition-colors duration-200">Contact</a>
+      </nav>
+      <a href="contact.html" class="hidden lg:inline-flex items-center rounded-full bg-[#2158C6] text-white font-poppins font-semibold text-sm px-6 py-2.5 hover:bg-[#1B2A4A] transition-colors duration-200">
+        Demander un devis
+      </a>
+      <button id="menu-btn" class="lg:hidden p-2 text-[#1B2A4A]" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-[#F4F6F9] px-6 py-4 flex flex-col gap-4">
+      <a href="index.html" class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6]">Accueil</a>
+      <a href="services.html" class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6]">Services</a>
+      <a href="realisations.html" class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6]">Réalisations</a>
+      <a href="equipe.html" class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6]">Équipe</a>
+      <a href="a-propos.html" class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6]">À propos</a>
+      <a href="contact.html" class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6]">Contact</a>
+      <a href="contact.html" class="inline-flex justify-center rounded-full bg-[#2158C6] text-white font-poppins font-semibold text-sm px-6 py-2.5">Demander un devis</a>
+    </div>
+  </header>
+
+  <!-- ── MAIN ── -->
+  <main class="pt-16">
+
+    <!-- Hero secondaire -->
+    <section class="bg-[#1B2A4A] py-24 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10" aria-hidden="true">
+        <div class="absolute inset-0" style="background: linear-gradient(135deg, #1B2A4A 0%, #3A7BC8 60%, #5FA8E0 100%);"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto px-6 lg:px-8 text-center">
+        <span class="inline-block font-montserrat text-sm font-medium text-[#5FA8E0] tracking-widest uppercase mb-4">Nos offres</span>
+        <h1 class="font-poppins font-bold text-4xl md:text-5xl text-white mb-6 leading-tight">
+          Des solutions pour chaque étape<br class="hidden md:block" /> de votre développement
+        </h1>
+        <p class="font-montserrat text-white/80 text-lg max-w-2xl mx-auto leading-relaxed">
+          Des forfaits clairs, des prix en FCFA, des délais tenus. Choisissez la formule qui correspond à votre besoin aujourd'hui.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tableau comparatif -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <span class="inline-block font-montserrat text-sm font-medium text-[#2158C6] tracking-widest uppercase mb-4">Comparer les formules</span>
+          <h2 class="font-poppins font-semibold text-3xl text-[#1B2A4A]">Trouvez la formule qui vous convient</h2>
+        </div>
+        <div class="overflow-x-auto rounded-lg shadow-[0_4px_12px_rgba(27,42,74,0.08)]">
+          <table class="w-full border-collapse min-w-[640px]">
+            <thead>
+              <tr>
+                <th class="bg-[#F4F6F9] text-left px-6 py-4 font-poppins font-semibold text-sm text-[#1B2A4A] border-b border-[#F4F6F9]">Fonctionnalités</th>
+                <th class="bg-[#F4F6F9] text-center px-6 py-4 font-poppins font-semibold text-sm text-[#1B2A4A] border-b border-[#F4F6F9]">Starter</th>
+                <th class="bg-[#2158C6] text-center px-6 py-4 font-poppins font-semibold text-sm text-white border-b border-[#1a4aa0] relative">
+                  Pro
+                  <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#5FA8E0] text-white text-xs font-poppins font-semibold px-3 py-1 rounded-full whitespace-nowrap">Recommandé</span>
+                </th>
+                <th class="bg-[#1B2A4A] text-center px-6 py-4 font-poppins font-semibold text-sm text-white border-b border-[#0f1c32]">Site + Gestion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Prix -->
+              <tr class="border-b border-[#F4F6F9]">
+                <td class="px-6 py-4 font-montserrat text-sm text-[#6B7280]">Prix</td>
+                <td class="px-6 py-4 text-center font-poppins font-bold text-[#1B2A4A]">150 000 FCFA</td>
+                <td class="px-6 py-4 text-center font-poppins font-bold text-white bg-[#2158C6]/10 text-[#2158C6]">300 000 FCFA</td>
+                <td class="px-6 py-4 text-center font-poppins font-bold text-[#1B2A4A]">500 000 FCFA</td>
+              </tr>
+              <!-- Nb pages -->
+              <tr class="border-b border-[#F4F6F9] bg-[#F4F6F9]/30">
+                <td class="px-6 py-4 font-montserrat text-sm text-[#6B7280]">Nombre de pages</td>
+                <td class="px-6 py-4 text-center font-montserrat text-sm text-[#3D4552]">5 pages</td>
+                <td class="px-6 py-4 text-center font-montserrat text-sm text-[#3D4552] bg-[#EBF1FB]/40">10 pages</td>
+                <td class="px-6 py-4 text-center font-montserrat text-sm text-[#3D4552]">Illimité</td>
+              </tr>
+              <!-- Contenu -->
+              <tr class="border-b border-[#F4F6F9]">
+                <td class="px-6 py-4 font-montserrat text-sm text-[#6B7280]">Contenu</td>
+                <td class="px-6 py-4 text-center font-montserrat text-sm text-[#3D4552]">Fourni par le client</td>
+                <td class="px-6 py-4 text-center font-montserrat text-sm text-[#3D4552] bg-[#EBF1FB]/40">Rédaction incluse</td>
+                <td class="px-6 py-4 text-center font-montserrat text-sm text-[#3D4552]">Rédaction + photos</td>
+              </tr>
+              <!-- Maintenance -->
+              <tr class="border-b border-[#F4F6F9] bg-[#F4F6F9]/30">
+                <td class="px-6 py-4 font-montserrat text-sm text-[#6B7280]">Maintenance</td>
+                <td class="px-6 py-4 text-center font-montserrat text-sm text-[#3D4552]">Non incluse</td>
+                <td class="px-6 py-4 text-center font-montserrat text-sm text-[#3D4552] bg-[#EBF1FB]/40">6 mois inclus</td>
+                <td class="px-6 py-4 text-center font-montserrat text-sm text-[#3D4552]">12 mois inclus</td>
+              </tr>
+              <!-- Délai -->
+              <tr class="border-b border-[#F4F6F9]">
+                <td class="px-6 py-4 font-montserrat text-sm text-[#6B7280]">Délai de livraison</td>
+                <td class="px-6 py-4 text-center font-montserrat text-sm text-[#3D4552]">2 semaines</td>
+                <td class="px-6 py-4 text-center font-montserrat text-sm text-[#3D4552] bg-[#EBF1FB]/40">3 semaines</td>
+                <td class="px-6 py-4 text-center font-montserrat text-sm text-[#3D4552]">4 semaines</td>
+              </tr>
+              <!-- CTA -->
+              <tr>
+                <td class="px-6 py-5 font-montserrat text-sm text-[#6B7280]"></td>
+                <td class="px-6 py-5 text-center">
+                  <a href="contact.html" class="inline-flex items-center justify-center rounded-full border-2 border-[#2158C6] text-[#2158C6] font-poppins font-semibold text-sm px-6 py-2 hover:bg-[#2158C6] hover:text-white transition-colors duration-200">Choisir</a>
+                </td>
+                <td class="px-6 py-5 text-center bg-[#EBF1FB]/40">
+                  <a href="contact.html" class="inline-flex items-center justify-center rounded-full bg-[#2158C6] text-white font-poppins font-semibold text-sm px-6 py-2 hover:bg-[#1B2A4A] transition-colors duration-200">Choisir</a>
+                </td>
+                <td class="px-6 py-5 text-center">
+                  <a href="contact.html" class="inline-flex items-center justify-center rounded-full border-2 border-[#1B2A4A] text-[#1B2A4A] font-poppins font-semibold text-sm px-6 py-2 hover:bg-[#1B2A4A] hover:text-white transition-colors duration-200">Choisir</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services complémentaires -->
+    <section class="py-24 bg-[#F4F6F9]">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <span class="inline-block font-montserrat text-sm font-medium text-[#2158C6] tracking-widest uppercase mb-4">Aller plus loin</span>
+          <h2 class="font-poppins font-semibold text-3xl text-[#1B2A4A]">Services complémentaires</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Identité visuelle -->
+          <div class="bg-white rounded-lg p-8 shadow-[0_4px_12px_rgba(27,42,74,0.08)]">
+            <div class="w-12 h-12 rounded-lg bg-[#EBF1FB] flex items-center justify-center mb-6">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#2158C6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 8l4 4-4 4-4-4 4-4z"/>
+              </svg>
+            </div>
+            <h3 class="font-poppins font-semibold text-xl text-[#1B2A4A] mb-2">Identité visuelle</h3>
+            <p class="font-montserrat text-sm text-[#2158C6] font-medium mb-4">Dès 75 000 FCFA</p>
+            <p class="font-montserrat text-sm text-[#6B7280] leading-relaxed">
+              Logo, charte graphique, kit réseaux sociaux. Une identité mémorable qui reflète votre activité et parle à vos clients.
+            </p>
+          </div>
+          <!-- Marketing digital -->
+          <div class="bg-white rounded-lg p-8 shadow-[0_4px_12px_rgba(27,42,74,0.08)]">
+            <div class="w-12 h-12 rounded-lg bg-[#EBF1FB] flex items-center justify-center mb-6">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#2158C6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                <path d="M3 3l3.5 3.5L12 3l5.5 3.5L21 3v18l-3.5-3.5L12 21l-5.5-3.5L3 21V3z"/>
+              </svg>
+            </div>
+            <h3 class="font-poppins font-semibold text-xl text-[#1B2A4A] mb-2">Marketing digital</h3>
+            <p class="font-montserrat text-sm text-[#2158C6] font-medium mb-4">Dès 50 000 FCFA/mois</p>
+            <p class="font-montserrat text-sm text-[#6B7280] leading-relaxed">
+              Gestion des réseaux sociaux, publicités Meta, stratégie de contenu adaptée au marché béninois.
+            </p>
+          </div>
+          <!-- Maintenance -->
+          <div class="bg-white rounded-lg p-8 shadow-[0_4px_12px_rgba(27,42,74,0.08)]">
+            <div class="w-12 h-12 rounded-lg bg-[#EBF1FB] flex items-center justify-center mb-6">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#2158C6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                <path d="M12 2a10 10 0 1 0 10 10"/>
+                <path d="M12 6v6l4 2"/>
+                <path d="M20 2v4h-4"/>
+              </svg>
+            </div>
+            <h3 class="font-poppins font-semibold text-xl text-[#1B2A4A] mb-2">Maintenance</h3>
+            <p class="font-montserrat text-sm text-[#2158C6] font-medium mb-4">Dès 25 000 FCFA/mois</p>
+            <p class="font-montserrat text-sm text-[#6B7280] leading-relaxed">
+              Mises à jour de sécurité, sauvegardes régulières, petites modifications et support technique prioritaire.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordéon -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <span class="inline-block font-montserrat text-sm font-medium text-[#2158C6] tracking-widest uppercase mb-4">Vos questions</span>
+          <h2 class="font-poppins font-semibold text-3xl text-[#1B2A4A]">Questions fréquentes</h2>
+        </div>
+        <div class="max-w-3xl mx-auto">
+
+          <!-- FAQ 1 -->
+          <div class="border border-[#F4F6F9] rounded-lg mb-3">
+            <button data-faq-btn="faq-1" aria-expanded="false" class="w-full flex items-center justify-between px-6 py-4 text-left font-poppins font-medium text-sm text-[#1B2A4A] hover:text-[#2158C6] transition-colors duration-200">
+              Quel est le délai de livraison d'un site ?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="faq-chevron w-5 h-5 flex-shrink-0 ml-4 text-[#6B7280]">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div id="faq-1" data-faq-panel class="hidden px-6 pb-4">
+              <p class="font-montserrat text-sm text-[#6B7280] leading-relaxed">Nos délais vont de 2 à 4 semaines selon la formule choisie. Nous respectons les délais convenus dès la signature du devis.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="border border-[#F4F6F9] rounded-lg mb-3">
+            <button data-faq-btn="faq-2" aria-expanded="false" class="w-full flex items-center justify-between px-6 py-4 text-left font-poppins font-medium text-sm text-[#1B2A4A] hover:text-[#2158C6] transition-colors duration-200">
+              L'hébergement est-il inclus dans le prix ?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="faq-chevron w-5 h-5 flex-shrink-0 ml-4 text-[#6B7280]">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div id="faq-2" data-faq-panel class="hidden px-6 pb-4">
+              <p class="font-montserrat text-sm text-[#6B7280] leading-relaxed">Oui, pour les formules Starter et Pro, l'hébergement est inclus la première année. Au-delà, un forfait annuel s'applique.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="border border-[#F4F6F9] rounded-lg mb-3">
+            <button data-faq-btn="faq-3" aria-expanded="false" class="w-full flex items-center justify-between px-6 py-4 text-left font-poppins font-medium text-sm text-[#1B2A4A] hover:text-[#2158C6] transition-colors duration-200">
+              Puis-je modifier le site moi-même après livraison ?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="faq-chevron w-5 h-5 flex-shrink-0 ml-4 text-[#6B7280]">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div id="faq-3" data-faq-panel class="hidden px-6 pb-4">
+              <p class="font-montserrat text-sm text-[#6B7280] leading-relaxed">Nous livrons une formation de prise en main. Pour les modifications régulières, notre formule de maintenance mensuelle est recommandée.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="border border-[#F4F6F9] rounded-lg mb-3">
+            <button data-faq-btn="faq-4" aria-expanded="false" class="w-full flex items-center justify-between px-6 py-4 text-left font-poppins font-medium text-sm text-[#1B2A4A] hover:text-[#2158C6] transition-colors duration-200">
+              Acceptez-vous le paiement en Mobile Money ?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="faq-chevron w-5 h-5 flex-shrink-0 ml-4 text-[#6B7280]">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div id="faq-4" data-faq-panel class="hidden px-6 pb-4">
+              <p class="font-montserrat text-sm text-[#6B7280] leading-relaxed">Oui, nous acceptons MTN Mobile Money, Moov Money et le virement bancaire. Un acompte de 50 % est demandé au démarrage.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="border border-[#F4F6F9] rounded-lg mb-3">
+            <button data-faq-btn="faq-5" aria-expanded="false" class="w-full flex items-center justify-between px-6 py-4 text-left font-poppins font-medium text-sm text-[#1B2A4A] hover:text-[#2158C6] transition-colors duration-200">
+              Que se passe-t-il après la période de maintenance ?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="faq-chevron w-5 h-5 flex-shrink-0 ml-4 text-[#6B7280]">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div id="faq-5" data-faq-panel class="hidden px-6 pb-4">
+              <p class="font-montserrat text-sm text-[#6B7280] leading-relaxed">Vous pouvez souscrire à notre forfait maintenance mensuel (dès 25 000 FCFA/mois) ou reprendre votre autonomie complète.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="border border-[#F4F6F9] rounded-lg mb-3">
+            <button data-faq-btn="faq-6" aria-expanded="false" class="w-full flex items-center justify-between px-6 py-4 text-left font-poppins font-medium text-sm text-[#1B2A4A] hover:text-[#2158C6] transition-colors duration-200">
+              Travaillez-vous avec des entreprises hors du Bénin ?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="faq-chevron w-5 h-5 flex-shrink-0 ml-4 text-[#6B7280]">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div id="faq-6" data-faq-panel class="hidden px-6 pb-4">
+              <p class="font-montserrat text-sm text-[#6B7280] leading-relaxed">Notre cœur de cible est le Bénin, mais envisageons travailler aussi pour des entreprises de la sous-région (Togo, Côte d'Ivoire, Sénégal) et meme en Europe.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="py-16 bg-[#2158C6]">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+        <h2 class="font-poppins font-bold text-3xl text-white mb-4">Prêt à démarrer votre projet ?</h2>
+        <p class="font-montserrat text-white/80 text-base mb-8 max-w-lg mx-auto leading-relaxed">
+          Discutons de vos besoins. Nous vous répondons sous 24 heures avec une proposition adaptée.
+        </p>
+        <a href="contact.html" class="inline-flex items-center rounded-full bg-white text-[#2158C6] font-poppins font-semibold text-sm px-8 py-3 hover:bg-[#F4F6F9] transition-colors duration-200">
+          Demander un devis gratuit
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="bg-[#1B2A4A] text-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 mb-4">
+            <img src="assets/images/bmgj-logo.png" alt="BMGJ Groupe" class="h-10 w-auto logo-white" />
+            <span class="font-poppins font-semibold text-base tracking-wide text-white">Groupe</span>
+          </div>
+          <p class="font-montserrat text-white/60 text-sm leading-relaxed max-w-xs">
+            Agence digitale basée à Cotonou. Nous accompagnons les PME béninoises dans leur transformation numérique.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-poppins font-semibold text-white text-sm mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="services.html" class="font-montserrat text-white/60 text-sm hover:text-white transition-colors">Création de sites web</a></li>
+            <li><a href="services.html" class="font-montserrat text-white/60 text-sm hover:text-white transition-colors">Identité visuelle</a></li>
+            <li><a href="services.html" class="font-montserrat text-white/60 text-sm hover:text-white transition-colors">Marketing digital</a></li>
+            <li><a href="services.html" class="font-montserrat text-white/60 text-sm hover:text-white transition-colors">Maintenance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-poppins font-semibold text-white text-sm mb-4">Entreprise</h4>
+          <ul class="space-y-2">
+            <li><a href="a-propos.html" class="font-montserrat text-white/60 text-sm hover:text-white transition-colors">À propos</a></li>
+            <li><a href="equipe.html" class="font-montserrat text-white/60 text-sm hover:text-white transition-colors">Équipe</a></li>
+            <li><a href="realisations.html" class="font-montserrat text-white/60 text-sm hover:text-white transition-colors">Réalisations</a></li>
+            <li><a href="contact.html" class="font-montserrat text-white/60 text-sm hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p class="font-montserrat text-white/40 text-xs">© 2025 BMGJ Groupe. Tous droits réservés.</p>
+        <p class="font-montserrat text-white/40 text-xs">Cotonou, Bénin · contact@bmgjgroupe.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bouton WhatsApp flottant -->
+  <a href="https://wa.me/22900000000" target="_blank" rel="noopener noreferrer"
+     class="fixed bottom-6 right-6 lg:hidden z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:bg-[#1ebe57] transition-colors duration-200"
+     aria-label="Contacter sur WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white" class="w-7 h-7">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.374 0 0 5.373 0 12c0 2.117.549 4.099 1.508 5.814L.057 23.428a.75.75 0 0 0 .943.941l5.649-1.444A11.945 11.945 0 0 0 12 24c6.626 0 12-5.374 12-12S18.626 0 12 0zm0 22.5c-1.933 0-3.737-.514-5.288-1.408l-.373-.216-3.927 1.003 1.018-3.838-.237-.385A10.47 10.47 0 0 1 1.5 12C1.5 6.21 6.21 1.5 12 1.5S22.5 6.21 22.5 12 17.79 22.5 12 22.5z"/>
+    </svg>
+  </a>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

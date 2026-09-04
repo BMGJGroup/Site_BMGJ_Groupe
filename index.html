@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMGJ Groupe — Agence digitale Cotonou, Bénin</title>
+  <meta name="description" content="BMGJ Groupe accompagne les PME et entrepreneurs béninois dans leur digitalisation — sites web, identité visuelle, marketing digital." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/tailwind.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="min-h-full">
+
+  <!-- ── Header ── -->
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" aria-label="BMGJ Groupe — accueil">
+        <div class="flex items-center gap-2">
+          <img src="assets/images/bmgj-logo.png" alt="BMGJ Groupe" class="h-10 w-auto" />
+          <span class="font-poppins font-semibold text-base tracking-wide hidden sm:block text-[#1B2A4A]">Groupe</span>
+        </div>
+      </a>
+      <!-- Nav desktop -->
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="index.html" data-nav-link class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6] transition-colors duration-200">Accueil</a>
+        <a href="services.html" data-nav-link class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6] transition-colors duration-200">Services</a>
+        <a href="realisations.html" data-nav-link class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6] transition-colors duration-200">Réalisations</a>
+        <a href="equipe.html" data-nav-link class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6] transition-colors duration-200">Équipe</a>
+        <a href="a-propos.html" data-nav-link class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6] transition-colors duration-200">À propos</a>
+        <a href="contact.html" data-nav-link class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6] transition-colors duration-200">Contact</a>
+      </nav>
+      <a href="#contact" class="hidden lg:inline-flex items-center rounded-full bg-[#2158C6] text-white font-poppins font-semibold text-sm px-6 py-2.5 hover:bg-[#1B2A4A] transition-colors duration-200">
+        Demander un devis
+      </a>
+      <!-- Hamburger -->
+      <button id="menu-btn" class="lg:hidden p-2 text-[#1B2A4A]" aria-label="Menu" aria-expanded="false">
+        <svg id="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6 hidden"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-[#F4F6F9] px-6 py-4 flex flex-col gap-4">
+      <a href="index.html" class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6]">Accueil</a>
+      <a href="services.html" class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6]">Services</a>
+      <a href="realisations.html" class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6]">Réalisations</a>
+      <a href="equipe.html" class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6]">Équipe</a>
+      <a href="a-propos.html" class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6]">À propos</a>
+      <a href="contact.html" class="font-montserrat text-sm text-[#3D4552] hover:text-[#2158C6]">Contact</a>
+      <a href="#contact" class="inline-flex justify-center rounded-full bg-[#2158C6] text-white font-poppins font-semibold text-sm px-6 py-2.5">Demander un devis</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── 1. Hero ── -->
+    <section id="accueil" class="relative min-h-screen flex items-center overflow-hidden">
+      <!-- Background image -->
+      <div class="absolute inset-0 bg-cover bg-center"
+           style="background-image: url('https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?w=1600&h=900&fit=crop&auto=format');"
+           aria-hidden="true"></div>
+      <!-- Navy veil -->
+      <div class="absolute inset-0" style="background: rgba(27,42,74,0.65);" aria-hidden="true"></div>
+      <!-- Decorative circle top-right -->
+      <div class="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full opacity-10"
+           style="background: radial-gradient(circle, #5FA8E0, transparent);"
+           aria-hidden="true"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-24 pb-16">
+        <div class="max-w-3xl">
+          <p class="font-montserrat text-[#5FA8E0] text-sm font-medium tracking-widest uppercase mb-6">
+            Agence digitale · Cotonou, Bénin
+          </p>
+          <h1 class="font-poppins font-bold text-white leading-tight mb-8"
+              style="font-size: clamp(2rem, 5vw, 3rem); line-height: 1.2;">
+            Le digital à hauteur des PME béninoises :
+            <span class="text-[#5FA8E0]">accessible, fiable et durable</span>
+          </h1>
+          <p class="font-montserrat text-white/80 text-lg leading-relaxed mb-10 max-w-2xl">
+            Nous accompagnons les entrepreneurs et PME du Bénin dans leur transformation
+            numérique — sites web, identité visuelle, marketing digital — avec des prix clairs,
+            des délais tenus et un suivi humain.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#contact"
+               class="inline-flex items-center rounded-full bg-[#2158C6] text-white font-poppins font-semibold text-base px-8 py-3.5 hover:bg-[#1B2A4A] transition-colors duration-200">
+              Demander un devis
+            </a>
+            <a href="https://wa.me/2290149655210" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 rounded-full border-2 border-white text-white font-poppins font-semibold text-base px-8 py-3.5 hover:bg-white hover:text-[#1B2A4A] transition-colors duration-200">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                <path d="M12 0C5.374 0 0 5.373 0 12c0 2.117.549 4.099 1.508 5.814L.057 23.428a.75.75 0 0 0 .943.941l5.649-1.444A11.945 11.945 0 0 0 12 24c6.626 0 12-5.374 12-12S18.626 0 12 0zm0 22.5c-1.933 0-3.737-.514-5.288-1.408l-.373-.216-3.927 1.003 1.018-3.838-.237-.385A10.47 10.47 0 0 1 1.5 12C1.5 6.21 6.21 1.5 12 1.5S22.5 6.21 22.5 12 17.79 22.5 12 22.5z"/>
+              </svg>
+              Discuter sur WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 flex flex-col items-center gap-2">
+        <span class="font-montserrat text-xs tracking-widest uppercase">Découvrir</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5 animate-bounce" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ── 2. Services ── -->
+    <section id="services" class="py-24 bg-[#F4F6F9]">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <p class="font-montserrat text-[#2158C6] text-sm font-medium tracking-widest uppercase mb-3">
+            Ce que nous faisons
+          </p>
+          <h2 class="font-poppins font-semibold text-[#1B2A4A] mb-4"
+              style="font-size: clamp(1.5rem, 3vw, 2rem);">
+            Nos services
+          </h2>
+          <p class="font-montserrat text-[#6B7280] text-base max-w-xl mx-auto leading-relaxed">
+            Des solutions digitales concrètes, dimensionnées pour votre activité et votre budget.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <!-- Card 1 — Création de sites web -->
+          <div class="bg-white rounded-lg p-8 shadow-[0_4px_12px_rgba(27,42,74,0.08)] hover:shadow-[0_8px_24px_rgba(27,42,74,0.12)] transition-shadow duration-300 flex flex-col gap-5">
+            <div class="w-14 h-14 rounded-lg bg-[#EBF1FB] flex items-center justify-center text-[#2158C6]">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9h18M9 21V9"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-poppins font-medium text-[#1B2A4A] text-xl mb-2">Création de sites web</h3>
+              <p class="font-montserrat text-[#6B7280] text-sm leading-relaxed">
+                Sites vitrines et e-commerce sur-mesure, pensés pour vos clients béninois. Livraison en 2 à 4 semaines, hébergement inclus.
+              </p>
+            </div>
+            <p class="font-poppins font-semibold text-[#2158C6] text-sm mt-auto">À partir de 150 000 FCFA</p>
+          </div>
+
+          <!-- Card 2 — Identité visuelle -->
+          <div class="bg-white rounded-lg p-8 shadow-[0_4px_12px_rgba(27,42,74,0.08)] hover:shadow-[0_8px_24px_rgba(27,42,74,0.12)] transition-shadow duration-300 flex flex-col gap-5">
+            <div class="w-14 h-14 rounded-lg bg-[#EBF1FB] flex items-center justify-center text-[#2158C6]">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 3a9 9 0 0 1 6.36 2.64M12 3v9m0 0 6.36 2.64"/>
+                <circle cx="12" cy="12" r="2"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-poppins font-medium text-[#1B2A4A] text-xl mb-2">Identité visuelle</h3>
+              <p class="font-montserrat text-[#6B7280] text-sm leading-relaxed">
+                Logo, charte graphique et supports de communication cohérents avec votre positionnement sur le marché local.
+              </p>
+            </div>
+            <p class="font-poppins font-semibold text-[#2158C6] text-sm mt-auto">À partir de 75 000 FCFA</p>
+          </div>
+
+          <!-- Card 3 — Marketing digital -->
+          <div class="bg-white rounded-lg p-8 shadow-[0_4px_12px_rgba(27,42,74,0.08)] hover:shadow-[0_8px_24px_rgba(27,42,74,0.12)] transition-shadow duration-300 flex flex-col gap-5">
+            <div class="w-14 h-14 rounded-lg bg-[#EBF1FB] flex items-center justify-center text-[#2158C6]">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72 12.8 12.8 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.88-.88a2 2 0 0 1 2.11-.45 12.8 12.8 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-poppins font-medium text-[#1B2A4A] text-xl mb-2">Marketing digital</h3>
+              <p class="font-montserrat text-[#6B7280] text-sm leading-relaxed">
+                Gestion des réseaux sociaux, campagnes Google/Meta et stratégie de contenu adaptée à votre secteur et à votre budget.
+              </p>
+            </div>
+            <p class="font-poppins font-semibold text-[#2158C6] text-sm mt-auto">À partir de 50 000 FCFA / mois</p>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="services.html"
+             class="inline-flex items-center rounded-full bg-[#2158C6] text-white font-poppins font-semibold text-sm px-8 py-3.5 hover:bg-[#1B2A4A] transition-colors duration-200">
+            Voir toutes nos offres
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 3. Réalisations ── -->
+    <!--section id="realisations" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <p class="font-montserrat text-[#2158C6] text-sm font-medium tracking-widest uppercase mb-3">
+            Nos projets
+          </p>
+          <h2 class="font-poppins font-semibold text-[#1B2A4A] mb-4"
+              style="font-size: clamp(1.5rem, 3vw, 2rem);">
+            Réalisations récentes
+          </h2>
+          <p class="font-montserrat text-[#6B7280] text-base max-w-xl mx-auto leading-relaxed">
+            Des projets concrets, pour des entreprises béninoises réelles.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <!-- Projet 1 — Épices du Bénin >
+          <div class="project-card group rounded-lg overflow-hidden shadow-[0_4px_12px_rgba(27,42,74,0.08)] hover:shadow-[0_8px_24px_rgba(27,42,74,0.14)] transition-shadow duration-300 bg-white">
+            <div class="relative overflow-hidden h-48 bg-[#EBF1FB]">
+              <img src="https://images.unsplash.com/photo-1709281847802-9aef10b6d4bf?w=600&h=400&fit=crop&auto=format"
+                   alt="Boutique en ligne — Épices du Bénin"
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="p-6">
+              <span class="font-montserrat text-[#2158C6] text-xs font-medium uppercase tracking-wider">E-commerce</span>
+              <h3 class="font-poppins font-medium text-[#1B2A4A] text-lg mt-2 mb-2">Boutique en ligne — Épices du Bénin</h3>
+              <p class="font-montserrat text-[#6B7280] text-sm leading-relaxed">
+                Catalogue produits, panier et paiement Mobile Money intégré. +230 commandes le premier mois.
+              </p>
+            </div>
+          </div>
+
+          <!-- Projet 2 — Cabinet Adéola >
+          <div class="project-card group rounded-lg overflow-hidden shadow-[0_4px_12px_rgba(27,42,74,0.08)] hover:shadow-[0_8px_24px_rgba(27,42,74,0.14)] transition-shadow duration-300 bg-white">
+            <div class="relative overflow-hidden h-48 bg-[#EBF1FB]">
+              <img src="https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?w=600&h=400&fit=crop&auto=format"
+                   alt="Site vitrine — Cabinet Adéola & Associés"
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="p-6">
+              <span class="font-montserrat text-[#2158C6] text-xs font-medium uppercase tracking-wider">Site vitrine</span>
+              <h3 class="font-poppins font-medium text-[#1B2A4A] text-lg mt-2 mb-2">Site vitrine — Cabinet Adéola &amp; Associés</h3>
+              <p class="font-montserrat text-[#6B7280] text-sm leading-relaxed">
+                Présentation des services juridiques, formulaire de contact et blog. Taux de conversion +40 %.
+              </p>
+            </div>
+          </div>
+
+          <!-- Projet 3 — StartupHub Cotonou >
+          <div class="project-card group rounded-lg overflow-hidden shadow-[0_4px_12px_rgba(27,42,74,0.08)] hover:shadow-[0_8px_24px_rgba(27,42,74,0.14)] transition-shadow duration-300 bg-white">
+            <div class="relative overflow-hidden h-48 bg-[#EBF1FB]">
+              <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&h=400&fit=crop&auto=format"
+                   alt="Identité visuelle — StartupHub Cotonou"
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <span class="absolute top-3 right-3 bg-[#1B2A4A] text-white font-montserrat text-xs font-medium px-3 py-1 rounded-full">
+                Démonstration
+              </span>
+            </div>
+            <div class="p-6">
+              <span class="font-montserrat text-[#2158C6] text-xs font-medium uppercase tracking-wider">Identité visuelle</span>
+              <h3 class="font-poppins font-medium text-[#1B2A4A] text-lg mt-2 mb-2">Identité visuelle — StartupHub Cotonou</h3>
+              <p class="font-montserrat text-[#6B7280] text-sm leading-relaxed">
+                Logo, charte graphique complète et kit réseaux sociaux pour un incubateur de startups.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="realisations.html"
+             class="inline-flex items-center rounded-full bg-[#2158C6] text-white font-poppins font-semibold text-sm px-8 py-3.5 hover:bg-[#1B2A4A] transition-colors duration-200">
+            Voir toutes nos réalisations
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 4. Témoignages ── >
+    <section class="py-24 bg-[#1B2A4A]">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <p class="font-montserrat text-[#5FA8E0] text-sm font-medium tracking-widest uppercase mb-3">
+            Ils nous font confiance
+          </p>
+          <h2 class="font-poppins font-semibold text-white mb-4"
+              style="font-size: clamp(1.5rem, 3vw, 2rem);">
+            Ce que disent nos clients
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <!-- Témoignage 1 — Adesuwa Kolade >
+          <div class="bg-white/5 border border-white/10 rounded-lg p-8 flex flex-col gap-6">
+            <svg viewBox="0 0 32 32" fill="currentColor" class="w-8 h-8 text-[#5FA8E0] opacity-60" aria-hidden="true">
+              <path d="M10 8C6.686 8 4 10.686 4 14v10h10V14H7c0-1.657 1.343-3 3-3V8zm14 0c-3.314 0-6 2.686-6 6v10h10V14h-7c0-1.657 1.343-3 3-3V8z"/>
+            </svg>
+            <p class="font-montserrat text-white/80 text-sm leading-relaxed flex-1">
+              "BMGJ Groupe a compris notre activité dès le premier rendez-vous. Le site est livré dans les délais, les prix sont clairs et notre chiffre d'affaires en ligne a doublé en trois mois."
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-[#2158C6] flex items-center justify-center font-poppins font-semibold text-white text-sm flex-shrink-0">
+                AK
+              </div>
+              <div>
+                <p class="font-poppins font-medium text-white text-sm">Adesuwa Kolade</p>
+                <p class="font-montserrat text-[#5FA8E0] text-xs">Directrice — Épices du Bénin</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Témoignage 2 — Mathieu Gbédji >
+          <div class="bg-white/5 border border-white/10 rounded-lg p-8 flex flex-col gap-6">
+            <svg viewBox="0 0 32 32" fill="currentColor" class="w-8 h-8 text-[#5FA8E0] opacity-60" aria-hidden="true">
+              <path d="M10 8C6.686 8 4 10.686 4 14v10h10V14H7c0-1.657 1.343-3 3-3V8zm14 0c-3.314 0-6 2.686-6 6v10h10V14h-7c0-1.657 1.343-3 3-3V8z"/>
+            </svg>
+            <p class="font-montserrat text-white/80 text-sm leading-relaxed flex-1">
+              "J'avais peur que le digital soit compliqué et cher. L'équipe nous a guidés pas à pas, avec des explications simples. Nos clients trouvent enfin nos horaires et tarifs en ligne."
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-[#2158C6] flex items-center justify-center font-poppins font-semibold text-white text-sm flex-shrink-0">
+                MG
+              </div>
+              <div>
+                <p class="font-poppins font-medium text-white text-sm">Mathieu Gbédji</p>
+                <p class="font-montserrat text-[#5FA8E0] text-xs">Gérant — Transport Express Cotonou</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Témoignage 3 — Fatoumata Diallo >
+          <div class="bg-white/5 border border-white/10 rounded-lg p-8 flex flex-col gap-6">
+            <svg viewBox="0 0 32 32" fill="currentColor" class="w-8 h-8 text-[#5FA8E0] opacity-60" aria-hidden="true">
+              <path d="M10 8C6.686 8 4 10.686 4 14v10h10V14H7c0-1.657 1.343-3 3-3V8zm14 0c-3.314 0-6 2.686-6 6v10h10V14h-7c0-1.657 1.343-3 3-3V8z"/>
+            </svg>
+            <p class="font-montserrat text-white/80 text-sm leading-relaxed flex-1">
+              "Transparence totale sur les coûts, réactivité irréprochable. Je recommande BMGJ Groupe à tous les entrepreneurs béninois qui veulent se digitaliser sans mauvaises surprises."
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-[#2158C6] flex items-center justify-center font-poppins font-semibold text-white text-sm flex-shrink-0">
+                FD
+              </div>
+              <div>
+                <p class="font-poppins font-medium text-white text-sm">Fatoumata Diallo</p>
+                <p class="font-montserrat text-[#5FA8E0] text-xs">Fondatrice — Maison Diallo Textile</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 5. Pourquoi nous ── -->
+    <section id="pourquoi" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+          <!-- Colonne gauche -->
+          <div>
+            <p class="font-montserrat text-[#2158C6] text-sm font-medium tracking-widest uppercase mb-3">
+              Notre différence
+            </p>
+            <h2 class="font-poppins font-semibold text-[#1B2A4A] mb-6"
+                style="font-size: clamp(1.5rem, 3vw, 2rem);">
+              Pourquoi choisir BMGJ Groupe ?
+            </h2>
+            <p class="font-montserrat text-[#6B7280] text-base leading-relaxed mb-8">
+              Nous ne vendons pas du digital générique. Nous construisons des outils qui
+              fonctionnent dans le contexte béninois — avec le réseau local, les habitudes
+              de paiement et les attentes réelles de vos clients.
+            </p>
+            <a href="#contact"
+               class="inline-flex items-center rounded-full border-2 border-[#2158C6] text-[#2158C6] font-poppins font-semibold text-sm px-8 py-3 hover:bg-[#2158C6] hover:text-white transition-colors duration-200">
+              Parlons de votre projet
+            </a>
+          </div>
+
+          <!-- Colonne droite — grille des 5 raisons -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+            <!-- Raison 1 — Compréhension du terrain -->
+            <div class="bg-[#F4F6F9] rounded-lg p-6 flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-[#EBF1FB] flex items-center justify-center text-[#2158C6]">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-poppins font-medium text-[#1B2A4A] text-base mb-1">Compréhension du terrain</h3>
+                <p class="font-montserrat text-[#6B7280] text-sm leading-relaxed">
+                  Basés à Cotonou, nous connaissons vos clients, votre marché et les contraintes réelles des PME béninoises.
+                </p>
+              </div>
+            </div>
+
+            <!-- Raison 2 — Solidité -->
+            <div class="bg-[#F4F6F9] rounded-lg p-6 flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-[#EBF1FB] flex items-center justify-center text-[#2158C6]">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-poppins font-medium text-[#1B2A4A] text-base mb-1">Solidité</h3>
+                <p class="font-montserrat text-[#6B7280] text-sm leading-relaxed">
+                  Nos sites restent en ligne. Hébergement sécurisé, sauvegardes automatiques et support technique inclus.
+                </p>
+              </div>
+            </div>
+
+            <!-- Raison 3 — Clarté -->
+            <div class="bg-[#F4F6F9] rounded-lg p-6 flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-[#EBF1FB] flex items-center justify-center text-[#2158C6]">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M12 16v-4M12 8h.01"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-poppins font-medium text-[#1B2A4A] text-base mb-1">Clarté</h3>
+                <p class="font-montserrat text-[#6B7280] text-sm leading-relaxed">
+                  Devis détaillé avant tout démarrage. Prix en FCFA, délais précis, aucune surprise en cours de projet.
+                </p>
+              </div>
+            </div>
+
+            <!-- Raison 4 — Résultat pour vous -->
+            <div class="bg-[#F4F6F9] rounded-lg p-6 flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-[#EBF1FB] flex items-center justify-center text-[#2158C6]">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6" aria-hidden="true">
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                  <polyline points="16 7 22 7 22 13"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-poppins font-medium text-[#1B2A4A] text-base mb-1">Résultat pour vous</h3>
+                <p class="font-montserrat text-[#6B7280] text-sm leading-relaxed">
+                  Nous mesurons notre succès au vôtre : plus de visibilité, plus de clients, plus de ventes.
+                </p>
+              </div>
+            </div>
+
+            <!-- Raison 5 — Accessibilité (pleine largeur sur sm+) -->
+            <div class="bg-[#F4F6F9] rounded-lg p-6 flex gap-4 sm:col-span-2">
+              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-[#EBF1FB] flex items-center justify-center text-[#2158C6]">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6" aria-hidden="true">
+                  <line x1="12" y1="1" x2="12" y2="23"/>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-poppins font-medium text-[#1B2A4A] text-base mb-1">Accessibilité</h3>
+                <p class="font-montserrat text-[#6B7280] text-sm leading-relaxed">
+                  Des formules adaptées à chaque budget, sans jargon technique. Votre digitalisation, à votre rythme.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 6. Contact ── -->
+    <section id="contact" class="py-24 bg-[#F4F6F9]">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+          <!-- Colonne gauche — infos contact -->
+          <div>
+            <p class="font-montserrat text-[#2158C6] text-sm font-medium tracking-widest uppercase mb-3">
+              On vous répond sous 24 h
+            </p>
+            <h2 class="font-poppins font-semibold text-[#1B2A4A] mb-6"
+                style="font-size: clamp(1.5rem, 3vw, 2rem);">
+              Contactez-nous
+            </h2>
+            <p class="font-montserrat text-[#6B7280] text-base leading-relaxed mb-10">
+              Décrivez votre projet et nous vous revenons avec un devis détaillé — sans engagement,
+              sans frais, en FCFA.
+            </p>
+
+            <div class="flex flex-col gap-6">
+
+              <!-- Localisation -->
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-lg bg-[#EBF1FB] flex items-center justify-center text-[#2158C6] flex-shrink-0">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-poppins font-medium text-[#1B2A4A] text-sm">Localisation</p>
+                  <p class="font-montserrat text-[#6B7280] text-sm">Cotonou, Bénin</p>
+                </div>
+              </div>
+
+              <!-- WhatsApp -->
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-lg bg-[#EBF1FB] flex items-center justify-center text-[#2158C6] flex-shrink-0">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72 12.8 12.8 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.88-.88a2 2 0 0 1 2.11-.45 12.8 12.8 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-poppins font-medium text-[#1B2A4A] text-sm">WhatsApp</p>
+                  <a href="https://wa.me/22900000000" target="_blank" rel="noopener noreferrer"
+                     class="font-montserrat text-[#2158C6] text-sm hover:underline">
+                    +229 00 00 00 00
+                  </a>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-lg bg-[#EBF1FB] flex items-center justify-center text-[#2158C6] flex-shrink-0">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-poppins font-medium text-[#1B2A4A] text-sm">E-mail</p>
+                  <a href="mailto:contact@bmgjgroupe.com"
+                     class="font-montserrat text-[#2158C6] text-sm hover:underline">
+                    contact@bmgjgroupe.com
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Colonne droite — formulaire -->
+          <div class="bg-white rounded-lg p-8 shadow-[0_4px_12px_rgba(27,42,74,0.08)]">
+
+            <!-- Wrapper formulaire -->
+            <div id="form-wrapper">
+              <form id="contact-form" novalidate class="flex flex-col gap-5">
+
+                <!-- Nom + Entreprise -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div>
+                    <label for="nom" class="font-montserrat text-xs font-medium text-[#3D4552] mb-1.5 block">
+                      Nom complet <span class="text-[#C0392B]">*</span>
+                    </label>
+                    <input type="text" id="nom" name="nom" placeholder="Jean Koudossou" required
+                           class="w-full font-montserrat text-sm px-4 py-3 rounded-lg border border-[#8A93A3] outline-none transition-colors duration-200 focus:border-[#2158C6] focus:ring-1 focus:ring-[#2158C6] bg-white text-[#3D4552] placeholder:text-[#8A93A3]" />
+                    <p id="nom-error" class="hidden mt-1 text-xs text-[#C0392B] font-montserrat"></p>
+                  </div>
+                  <div>
+                    <label for="entreprise" class="font-montserrat text-xs font-medium text-[#3D4552] mb-1.5 block">
+                      Entreprise
+                    </label>
+                    <input type="text" id="entreprise" name="entreprise" placeholder="Votre société"
+                           class="w-full font-montserrat text-sm px-4 py-3 rounded-lg border border-[#8A93A3] outline-none transition-colors duration-200 focus:border-[#2158C6] focus:ring-1 focus:ring-[#2158C6] bg-white text-[#3D4552] placeholder:text-[#8A93A3]" />
+                  </div>
+                </div>
+
+                <!-- Téléphone + Email -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div>
+                    <label for="telephone" class="font-montserrat text-xs font-medium text-[#3D4552] mb-1.5 block">
+                      Téléphone / WhatsApp
+                    </label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="+229 00 00 00 00"
+                           class="w-full font-montserrat text-sm px-4 py-3 rounded-lg border border-[#8A93A3] outline-none transition-colors duration-200 focus:border-[#2158C6] focus:ring-1 focus:ring-[#2158C6] bg-white text-[#3D4552] placeholder:text-[#8A93A3]" />
+                  </div>
+                  <div>
+                    <label for="email" class="font-montserrat text-xs font-medium text-[#3D4552] mb-1.5 block">
+                      E-mail <span class="text-[#C0392B]">*</span>
+                    </label>
+                    <input type="email" id="email" name="email" placeholder="vous@exemple.com" required
+                           class="w-full font-montserrat text-sm px-4 py-3 rounded-lg border border-[#8A93A3] outline-none transition-colors duration-200 focus:border-[#2158C6] focus:ring-1 focus:ring-[#2158C6] bg-white text-[#3D4552] placeholder:text-[#8A93A3]" />
+                    <p id="email-error" class="hidden mt-1 text-xs text-[#C0392B] font-montserrat"></p>
+                  </div>
+                </div>
+
+                <!-- Besoin -->
+                <div>
+                  <label for="besoin" class="font-montserrat text-xs font-medium text-[#3D4552] mb-1.5 block">
+                    Votre besoin <span class="text-[#C0392B]">*</span>
+                  </label>
+                  <textarea id="besoin" name="besoin" rows="4" placeholder="Décrivez votre projet en quelques mots…" required
+                            class="w-full font-montserrat text-sm px-4 py-3 rounded-lg border border-[#8A93A3] outline-none transition-colors duration-200 focus:border-[#2158C6] focus:ring-1 focus:ring-[#2158C6] bg-white text-[#3D4552] placeholder:text-[#8A93A3] resize-none"></textarea>
+                  <p id="besoin-error" class="hidden mt-1 text-xs text-[#C0392B] font-montserrat"></p>
+                </div>
+
+                <!-- Budget -->
+                <div>
+                  <label for="budget" class="font-montserrat text-xs font-medium text-[#3D4552] mb-1.5 block">
+                    Budget envisagé (FCFA)
+                  </label>
+                  <select id="budget" name="budget"
+                          class="w-full font-montserrat text-sm px-4 py-3 rounded-lg border border-[#8A93A3] outline-none transition-colors duration-200 focus:border-[#2158C6] focus:ring-1 focus:ring-[#2158C6] bg-white text-[#3D4552] cursor-pointer">
+                    <option value="">À définir ensemble</option>
+                    <option value="moins-100k">Moins de 100 000 FCFA</option>
+                    <option value="100-300k">100 000 – 300 000 FCFA</option>
+                    <option value="300-500k">300 000 – 500 000 FCFA</option>
+                    <option value="plus-500k">Plus de 500 000 FCFA</option>
+                  </select>
+                </div>
+
+                <!-- Soumettre -->
+                <button type="submit"
+                        class="w-full rounded-full bg-[#2158C6] text-white font-poppins font-semibold text-sm py-3.5 hover:bg-[#1B2A4A] transition-colors duration-200 mt-2">
+                  Envoyer ma demande
+                </button>
+
+              </form>
+            </div>
+
+            <!-- Message succès (masqué par défaut) -->
+            <div id="form-success" class="hidden flex flex-col items-center justify-center py-12 gap-4 text-center">
+              <div class="w-16 h-16 rounded-full bg-[#E6F7F1] flex items-center justify-center">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#2E9E6D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
+              <h3 class="font-poppins font-semibold text-[#1B2A4A] text-xl">Message envoyé !</h3>
+              <p class="font-montserrat text-[#6B7280] text-sm leading-relaxed">
+                Nous avons bien reçu votre demande. Vous recevrez une réponse détaillée sous 24 heures ouvrées.
+              </p>
+              <button id="form-reset"
+                      class="mt-4 font-montserrat text-[#2158C6] text-sm underline bg-transparent border-none cursor-pointer">
+                Envoyer une autre demande
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="bg-[#1B2A4A] text-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+
+        <!-- Logo + tagline -->
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 mb-4">
+            <img src="assets/images/bmgj-logo.png" alt="BMGJ Groupe" class="h-10 w-auto logo-white" />
+            <span class="font-poppins font-semibold text-base tracking-wide text-white">Groupe</span>
+          </div>
+          <p class="font-montserrat text-white/60 text-sm leading-relaxed max-w-xs">
+            Agence digitale basée à Cotonou. Nous accompagnons les PME béninoises dans leur transformation numérique.
+          </p>
+          <!-- Réseaux sociaux -->
+          <div class="flex gap-3 mt-6">
+            <a href="#" aria-label="Facebook"
+               class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/60 transition-colors duration-200">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn"
+               class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/60 transition-colors duration-200">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram"
+               class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/60 transition-colors duration-200">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="font-poppins font-semibold text-white text-sm mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="services.html" class="font-montserrat text-white/60 text-sm hover:text-white transition-colors">Création de sites web</a></li>
+            <li><a href="services.html" class="font-montserrat text-white/60 text-sm hover:text-white transition-colors">Identité visuelle</a></li>
+            <li><a href="services.html" class="font-montserrat text-white/60 text-sm hover:text-white transition-colors">Marketing digital</a></li>
+            <li><a href="services.html" class="font-montserrat text-white/60 text-sm hover:text-white transition-colors">Maintenance</a></li>
+          </ul>
+        </div>
+
+        <!-- Entreprise -->
+        <div>
+          <h4 class="font-poppins font-semibold text-white text-sm mb-4">Entreprise</h4>
+          <ul class="space-y-2">
+            <li><a href="a-propos.html" class="font-montserrat text-white/60 text-sm hover:text-white transition-colors">À propos</a></li>
+            <li><a href="equipe.html" class="font-montserrat text-white/60 text-sm hover:text-white transition-colors">Équipe</a></li>
+            <li><a href="realisations.html" class="font-montserrat text-white/60 text-sm hover:text-white transition-colors">Réalisations</a></li>
+            <li><a href="contact.html" class="font-montserrat text-white/60 text-sm hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p class="font-montserrat text-white/40 text-xs">© 2025 BMGJ Groupe. Tous droits réservés.</p>
+        <p class="font-montserrat text-white/40 text-xs">Cotonou, Bénin · contact@bmgjgroupe.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Bouton WhatsApp flottant ── -->
+  <a href="https://wa.me/22900000000" target="_blank" rel="noopener noreferrer"
+     class="fixed bottom-6 right-6 lg:hidden z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:bg-[#1ebe57] transition-colors duration-200"
+     aria-label="Contacter sur WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white" class="w-7 h-7">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.374 0 0 5.373 0 12c0 2.117.549 4.099 1.508 5.814L.057 23.428a.75.75 0 0 0 .943.941l5.649-1.444A11.945 11.945 0 0 0 12 24c6.626 0 12-5.374 12-12S18.626 0 12 0zm0 22.5c-1.933 0-3.737-.514-5.288-1.408l-.373-.216-3.927 1.003 1.018-3.838-.237-.385A10.47 10.47 0 0 1 1.5 12C1.5 6.21 6.21 1.5 12 1.5S22.5 6.21 22.5 12 17.79 22.5 12 22.5z"/>
+    </svg>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

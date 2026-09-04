@@ -1,0 +1,53 @@
+/* ── Google Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap');
+
+/* ── Reset / Base ── */
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Montserrat', system-ui, 'Helvetica Neue', Arial, sans-serif;
+  color: #3D4552;
+  background: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', system-ui, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* ── Scrollbar discret ── */
+* { scrollbar-width: thin; scrollbar-color: transparent transparent; }
+*:hover { scrollbar-color: #8A93A3 transparent; }
+
+/* ── Logo blanc sur fond sombre ── */
+.logo-white { filter: brightness(0) invert(1); }
+
+/* ── Header scrolled ── */
+.header-scrolled {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(27,42,74,0.08);
+}
+
+/* ── Bounce animation (scroll indicator) ── */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+.animate-bounce { animation: bounce 1s infinite; }
+
+/* ── Transition image hover (project cards) ── */
+.project-card img { transition: transform 0.5s ease; }
+.project-card:hover img { transform: scale(1.05); }
+
+/* ── Filtre actif ── */
+.active-filter { background-color: #2158C6 !important; color: white !important; }
+
+/* ── FAQ chevron rotation ── */
+.faq-chevron { transition: transform 0.2s ease; }
+.faq-open .faq-chevron { transform: rotate(180deg); }
